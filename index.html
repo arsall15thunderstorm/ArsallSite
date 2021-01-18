@@ -1,0 +1,31 @@
+  <html lang = "en" >
+  <head>
+  <meta charset = "UTF-8">
+  <title>Site</title>
+  <style>
+  .Settings{
+  	color: red;
+  }	
+
+  </style>
+  </head>
+  <body>
+<h1>Clicker</h1>
+<button type = "button" class = "Settings" id="DevSettings">Dev Tools : OFF</button>
+<button type="button" class = "Settings" id="SearchSetting">Search : ON</button>
+
+
+<script>
+var devButton = document.getElementById("DevSettings");
+var searchButton = document.getElementById("SearchSetting");
+var devOnClick = function () {
+	devButton.textContent = "Dev Tools : ON";  
+};
+var searchOnClick = function () {
+searchButton.textContent = "Search : OFF";	
+}
+devButton.addEventListener("click", devOnClick);
+searchButton.addEventListener("click", searchOnClick);
+</script>  
+  </body>
+  </html>
